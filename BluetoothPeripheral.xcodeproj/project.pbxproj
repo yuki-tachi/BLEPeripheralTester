@@ -14,6 +14,8 @@
 		271C073E247257E6008D367A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271C073D247257E6008D367A /* Assets.xcassets */; };
 		271C0741247257E6008D367A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271C073F247257E6008D367A /* LaunchScreen.storyboard */; };
 		271C074C247257E7008D367A /* BluetoothPeripheralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271C074B247257E7008D367A /* BluetoothPeripheralTests.swift */; };
+		271C075724725FB4008D367A /* BluetoothPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271C075624725FB4008D367A /* BluetoothPeripheral.swift */; };
+		271C075924726622008D367A /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271C075824726622008D367A /* Setting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		271C0747247257E7008D367A /* BluetoothPeripheralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothPeripheralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		271C074B247257E7008D367A /* BluetoothPeripheralTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothPeripheralTests.swift; sourceTree = "<group>"; };
 		271C074D247257E7008D367A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		271C075624725FB4008D367A /* BluetoothPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothPeripheral.swift; sourceTree = "<group>"; };
+		271C075824726622008D367A /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +85,13 @@
 			children = (
 				271C0734247257E2008D367A /* AppDelegate.swift */,
 				271C0736247257E2008D367A /* SceneDelegate.swift */,
+				271C075824726622008D367A /* Setting.swift */,
 				271C0738247257E2008D367A /* ViewController.swift */,
 				271C073A247257E2008D367A /* Main.storyboard */,
 				271C073D247257E6008D367A /* Assets.xcassets */,
 				271C073F247257E6008D367A /* LaunchScreen.storyboard */,
 				271C0742247257E6008D367A /* Info.plist */,
+				271C075624725FB4008D367A /* BluetoothPeripheral.swift */,
 			);
 			path = BluetoothPeripheral;
 			sourceTree = "<group>";
@@ -201,7 +207,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				271C0739247257E2008D367A /* ViewController.swift in Sources */,
+				271C075924726622008D367A /* Setting.swift in Sources */,
 				271C0735247257E2008D367A /* AppDelegate.swift in Sources */,
+				271C075724725FB4008D367A /* BluetoothPeripheral.swift in Sources */,
 				271C0737247257E2008D367A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -348,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -363,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HUU98FCLC;
 				INFOPLIST_FILE = BluetoothPeripheral/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -380,6 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HUU98FCLC;
 				INFOPLIST_FILE = BluetoothPeripheral/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

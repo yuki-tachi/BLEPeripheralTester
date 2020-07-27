@@ -11,10 +11,12 @@ struct Setting {
     struct Bluetooth {
         struct Service {
             static var UUID: CBUUID = CBUUID(string: "8FECA99F-C116-45AB-A453-0A6B5A8EA12E")
+            static var RawUuid: String? = "8FECA99F-C116-45AB-A453-0A6B5A8EA12E"
         }
         
         struct Charcteristic {
             static var UUID: CBUUID = CBUUID(string: "97C36F66-9DDD-4D85-AF67-BBD21E7C5271")
+            static var RawUuid: String? = "97C36F66-9DDD-4D85-AF67-BBD21E7C5271"
         }
     }
 }
