@@ -29,7 +29,6 @@ class BluetoothPeripheral: NSObject {
         service.characteristics = [characteristic]
         // サービスをペリフェラルマネージャに追加
         peripheralManager.add(service)
-        
         // アドバタイズ開始
         peripheralManager.startAdvertising([
             CBAdvertisementDataLocalNameKey: "Display",
@@ -87,7 +86,7 @@ extension BluetoothPeripheral : CBPeripheralManagerDelegate{
             }
         }
         // リクエストに応答
-//        peripheralManager.respond(to: requests[0], withResult: .success)
+        // peripheralManager.respond(to: requests[0], withResult: .success)
     }
 
     private func peripheralManager(peripheral: CBPeripheralManager, didAddService service: CBService, error: NSError?) {

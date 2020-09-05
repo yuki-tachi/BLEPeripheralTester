@@ -15,8 +15,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     private var service: CBMutableService!
     private var characteristic: CBMutableCharacteristic!
     private var isConnecting: Bool = false
-
-    @IBOutlet weak var discript: UILabel!
+    
+    @IBOutlet weak var textView: UITextView!
     
     @IBAction func start(_ sender: UIButton) {
         debugLog("start")
@@ -63,7 +63,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     private func prepare() {
         let serviceUuid = self.getServiceUUID()
         debugLog("serviceUuid: \(serviceUuid)")
-        
         // サービスを作成
         service = CBMutableService(type: CBUUID(string: serviceUuid), primary: true) // primary -> 主となるサービスとするかどうか
         // キャラクタリスティックを作成
@@ -155,11 +154,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if peripheralManager != nil {
             print("isAdvertising: \(peripheralManager.isAdvertising)")
         }
-        //表示可能最大行数を指定
-        discript.numberOfLines = 0
         //contentsのサイズに合わせてobujectのサイズを変える
-        discript.sizeToFit()
-        discript.text = msg;
+        textView.text += msg + "\n";
     }
 }
 
