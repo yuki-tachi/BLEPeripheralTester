@@ -8,10 +8,11 @@
 
 import UIKit
 
-class UUIDViewController: UIViewController {
+class UUIDViewController: UIViewController, UITextFieldDelegate {
     @IBAction func Back(_ sender: Any) {
         dismiss(animated: true, completion:nil)
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,21 @@ class UUIDViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    private func setServiceUUID() {
+        let serviveId = "xxxx";
+        UserDefaults.standard.set(serviveId, forKey: "ServiceUuid")
+    }
+    
+    private func setCharcteristicUUID() {
+        let charcteristicId = "xxxx";
+        UserDefaults.standard.set(charcteristicId, forKey: "CharcteristicUuid")
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // キーボードを閉じる
+        textField.resignFirstResponder()
+        return true
+    }
 
     /*
     // MARK: - Navigation
